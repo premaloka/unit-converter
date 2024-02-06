@@ -1,0 +1,224 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@600;700;800&family=Source+Code+Pro:wght@500&display=swap');
+
+/* ---------------------- */
+/* Variables Properties   */
+/* ---------------------- */
+:root {
+	/* COLORS */
+	--color-primary: rgba(105, 67, 255, 1);
+	--color-secondary: rgba(178, 149, 255, 1);
+	--color-white: rgba(255, 255, 255, 1);
+	--color-light: rgba(211, 211, 211, 1);
+	--color-content-bg: rgba(244, 244, 244, 1);
+	--color-section-bg: rgba(255, 255, 255, 1);
+	--color-footer-bg: rgba(234, 234, 236, 1);
+	--color-font-h1: var(--color-white);
+	--color-font-h2: rgba(90, 83, 123, 1);
+	--color-font-p: rgba(53, 53, 53, 1);
+	--color-font-button: rgba(61, 61, 61, 1);
+	--color-border: var(--color-secondary);
+	--color-link: var(--color-primary);
+	--color-link-hover: var(--color-font-p);
+
+	/* PADDINGS */
+	--padding-header: 2rem 3.4rem 3.4rem;
+	--padding-section: 3rem;
+	--padding-input: 1.2rem 2rem;
+	--padding-button: 0.9rem 2.8rem;
+	--padding-main: 3.6rem 2.6rem;
+	--padding-section: 3.2rem;
+	--padding-footer: 4.4rem 3.4rem;
+
+	/* MARGINS */
+	--margin-h1: 0 0 3rem;
+	--margin-h2: 0 0 1.4rem;
+	--margin-input: 0 0 2.5rem;
+	--margin-section: 2.4rem 0;
+
+	/* FONTS */
+	--font-mulish: "Mulish", sans-serif;
+	--font-source-code: "Source Code Pro", monospace;
+
+	/* OTHER */
+	--border-radius: 5px;
+	--input-font: var(var(--font-mulish));
+	--input-font-size: 5.8rem;
+
+	/* H1 */
+	--h1-font: var(--font-mulish);
+	--h1-font-size: 4.6rem;
+	--h1-line-height: 3.8rem;
+	--h1-font-weight: 800;
+	--h1-letter-spacing: -0px;
+
+	/* H2 */
+	--h2-font: var(--font-mulish);
+	--h2-font-size: 2.2rem;
+	--h2-line-height: 2.2rem;
+	--h2-font-weight: 600;
+
+	/* Paragraph */
+	--p-font: var(--font-source-code);
+	--p-font-size: 1.4rem;
+	--p-font-line-height: 2.4rem;
+	--p-font-weight: 500;
+
+	/* Button */
+	--button-font: var(--font-mulish);
+	--button-font-size: 1.6rem;
+	--button-line-height: 2.4rem;
+	--button-weight: 700;
+
+	/* Footer */
+	--footer-font: var(--font-mulish);
+	--footer-font-size: 1.3rem;
+	--footer-line-height: 2rem;
+	--footer-weight: 600;
+
+}
+
+main.dark {
+	--color-content-bg: rgba(31, 41, 55, 1);
+}
+
+section.dark {
+	--color-section-bg: rgba(39, 53, 73, 1);
+	--color-font-p: var(--color-light);
+}
+
+section.dark h2 {
+	--color-font-h2: rgba(204, 193, 255, 1)
+}
+
+footer.dark {
+	--color-footer-bg: var(--color-primary);
+	--color-font-p: var(--color-secondary);
+}
+
+footer.dark a,
+footer.dark a:link {
+	--color-link: var(--color-light);
+}
+
+footer.dark a:hover {
+	--color-link-hover: var(--color-white);
+}
+
+/* ------------------- */
+/* CSS Reset           */
+/* ------------------- */
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+:root {
+	box-sizing: border-box;
+	min-height: 100%;
+	font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI",
+		Roboto, "Helvetica Neue", Arial, sans-serif;
+	position: relative;
+
+	-webkit-text-size-adjust: none;
+	-moz-text-size-adjust: none;
+	text-size-adjust: none;
+
+	font-synthesis: none;
+	text-rendering: optimizeLegibility;
+}
+
+html {
+	height: 100vh;
+	font-size: 10px;
+}
+
+body {
+	margin: 0;
+	/* min-height: 100vh; */
+	height: 100%;
+	font-size: 100%;
+	line-height: 1.5;
+
+	position: relative;
+}
+
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+	margin: 0;
+}
+
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role='list'],
+ol[role='list'] {
+	list-style: none;
+}
+
+/* Set shorter line heights on headings and interactive elements */
+h1,
+h2,
+h3,
+h4,
+button,
+input,
+label {
+	line-height: 1.1;
+}
+
+/* Balance text wrapping on headings */
+h1,
+h2,
+h3,
+h4 {
+	text-wrap: balance;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+	text-decoration-skip-ink: auto;
+	color: currentColor;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+	max-width: 100%;
+	display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+	font: inherit;
+	color: inherit;
+	text-decoration: none;
+}
+
+button {
+	padding: 0;
+	border: none;
+	background: none;
+	cursor: pointer;
+}
+
+/* Make sure textareas without a rows attribute are not tiny */
+textarea:not([rows]) {
+	min-height: 10em;
+}
+
+/* Anything that has been anchored to should have extra scroll margin */
+:target {
+	scroll-margin-block: 5ex;
+}
