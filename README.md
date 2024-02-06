@@ -5,7 +5,7 @@ This project is aimed to solve a user friendly experience for converting values 
 * Responsive design (mobile, tablets and desktop) 
 * Dark / Light mode
 * Localstorage used to remember ones setting.
-* Only numbers can be used in the input field
+* Only numbers can be converted
 * Help / error message if one tries to convert other characters than numbers
 * ARIA used for the toggle switch, to provide additional information to AT (Assistent Technologies)
 * Possibility to clear the input field
