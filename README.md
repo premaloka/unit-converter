@@ -4,7 +4,7 @@ This project is aimed to solve a user friendly experience for converting values 
 
 * Responsive design (mobile, tablets and desktop) 
 * Dark / Light mode
-* Localstorage used to remember ones setting.
+* LocalStorage used to remember mode setting.
 * Only numbers can be converted
 * Help / error message if one tries to convert other characters than numbers
 * ARIA used for the toggle switch, to provide additional information to AT (Assistent Technologies)
