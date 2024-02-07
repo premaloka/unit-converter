@@ -11,4 +11,8 @@ This project is aimed to solve a user friendly experience for converting values 
 * Possibility to clear the input field
 * Both keypress "Enter" and button "Convert" works for conversions
 
-<img width="711" alt="Skärmavbild 2024-02-06 kl  17 00 02" src="https://github.com/premaloka/unit-converter/assets/113435908/398e38c7-bb9d-472c-9678-9ec48b3b8a7b">
+--------------
+
+<img width="390" alt="unit-converter-light" src="https://github.com/premaloka/unit-converter/assets/113435908/7da06ebb-97fa-49e5-8209-bf3993da3dd7">
+
+<img width="390" alt="unit-converter-dark" src="https://github.com/premaloka/unit-converter/assets/113435908/9333ce76-3cb4-48f3-8bc4-c4891b73f70e">
