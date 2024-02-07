@@ -11,58 +11,64 @@
 </head>
 
 <body>
-	<header>
-		<div id="toggle-mode" title="Switch between light mode and dark mode" role="switch" aria-checked="false" tabindex="0">
-			<span class="label">Dark mode</span>
-			<span class="switch">
-				<span></span>
-			</span>
-			<!-- <span class="off" aria-hidden="true">off</span>
-			<span class="on" aria-hidden="true">on</span> -->
-		</div>
-		<h1>Metric / Imperial Unit Conversion</h1>
-		<small id="error-message"></small>
-		<div id="input">
-			<input type="text" id="metrics" placeholder="0" title="Add your number you want to convert" inputmode="numeric"
-				pattern="[0-9.]" maxlength="10" />
-			<button title="clear input" type="button" id="clear">
-				<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
-					<path fill="currentColor"
-						d="M195.2 195.2a64 64 0 0 1 90.496 0L512 421.504L738.304 195.2a64 64 0 0 1 90.496 90.496L602.496 512L828.8 738.304a64 64 0 0 1-90.496 90.496L512 602.496L285.696 828.8a64 64 0 0 1-90.496-90.496L421.504 512L195.2 285.696a64 64 0 0 1 0-90.496" />
-				</svg>
-			</button>
-		</div>
-		<button type="button" title="Convert metrics" id="convert">Convert</button>
-	</header>
-	<main>
-		<section>
-			<h2>Length <span class="format">(in meter/ feet)</span></h2>
-			<p id="length-conversion">
-				<span class="format__one">0 meters = 0.000 feet |</span>
-				<span class="format__two">0 feet = 0.000 meters
+	<div id="body-wrapper">
+		<header>
+			<div id="toggle-mode" title="Switch between light mode and dark mode" role="switch" aria-checked="false"
+				tabindex="0">
+				<span class="label">Dark mode</span>
+				<span class="switch">
+					<span></span>
 				</span>
-			</p>
-		</section>
-		<section>
-			<h2>Volume <span class="format">(in liters/ gallons)</span></h2>
-			<p id="volume-conversion">
-				<span class="format__one">0 liters = 0.000 gallons |</span>
-				<span class="format__two">0 gallons = 0.000 liters
-				</span>
-			</p>
-		</section>
-		<section>
-			<h2>Mass <span class="format">(in kilograms/ pounds)</span></h2>
-			<p id="mass-conversion">
-				<span class="format__one">0 kilos = 0.000 pounds |</span>
-				<span class="format__two">0 pounds = 0.000 kilos
-				</span>
-			</p>
-		</section>
-	</main>
-	<footer>
-		<p>coded by <a class="link" href="https://github.com/premaloka" title="Premaloka Design & Development - GitHub">premaloka</a></p>
-	</footer>
+				<!-- <span class="off" aria-hidden="true">off</span>
+				<span class="on" aria-hidden="true">on</span> -->
+			</div>
+			<h1>Metric / Imperial Unit Conversion</h1>
+			<small id="error-message"></small>
+			<div id="input">
+				<div id="input-wrapper">
+					<input type="text" id="metrics" placeholder="0" title="Add your number you want to convert"
+						inputmode="numeric" pattern="[0-9.]" maxlength="10" />
+					<button title="clear input" type="button" id="clear">
+						<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+							<path fill="currentColor"
+								d="M195.2 195.2a64 64 0 0 1 90.496 0L512 421.504L738.304 195.2a64 64 0 0 1 90.496 90.496L602.496 512L828.8 738.304a64 64 0 0 1-90.496 90.496L512 602.496L285.696 828.8a64 64 0 0 1-90.496-90.496L421.504 512L195.2 285.696a64 64 0 0 1 0-90.496" />
+						</svg>
+					</button>
+				</div>
+			</div>
+			<button type="button" title="Convert metrics" id="convert">Convert</button>
+		</header>
+		<main>
+			<section>
+				<h2>Length <span class="format">(in meter/ feet)</span></h2>
+				<p id="length-conversion">
+					<span class="format__one">0 meters = 0.000 feet |</span>
+					<span class="format__two">0 feet = 0.000 meters
+					</span>
+				</p>
+			</section>
+			<section>
+				<h2>Volume <span class="format">(in liters/ gallons)</span></h2>
+				<p id="volume-conversion">
+					<span class="format__one">0 liters = 0.000 gallons |</span>
+					<span class="format__two">0 gallons = 0.000 liters
+					</span>
+				</p>
+			</section>
+			<section>
+				<h2>Mass <span class="format">(in kilograms/ pounds)</span></h2>
+				<p id="mass-conversion">
+					<span class="format__one">0 kilos = 0.000 pounds |</span>
+					<span class="format__two">0 pounds = 0.000 kilos
+					</span>
+				</p>
+			</section>
+		</main>
+		<footer>
+			<p>coded by <a class="link" href="https://github.com/premaloka"
+					title="Premaloka Design & Development - GitHub">premaloka</a></p>
+		</footer>
+	</div>
 
 </body>
 

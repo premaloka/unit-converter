@@ -7,6 +7,7 @@ h1 {
 	color: var(--color-font-h1);
 	margin: var(--margin-h1);
 	text-align: center;
+	max-width: 560px;
 }
 
 h2 {
@@ -24,6 +25,13 @@ body {
 	flex-grow: 1;
 }
 
+#body-wrapper {
+	max-width: 575px;
+	display: flex;
+	flex-grow: 1;
+	flex-direction: column;
+	margin: 8px;
+}
 main {
 	flex-grow: 1;
 	width: 100%;
@@ -44,6 +52,7 @@ header {
 	align-items: center;
 	width: 100%;
 	position: relative;
+	border-radius: 111px 15px 0 0;
 }
 
 input#metrics {
@@ -93,7 +102,12 @@ section {
 	width: 100%;
 	padding: var(--padding-section);
 	text-align: center;
-	max-width: 590px;
+	flex-grow: 1;
+	flex-shrink: 0;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
 }
 
 section:nth-of-type(2) {
@@ -232,15 +246,17 @@ footer a:hover {
 	position: relative;
 }
 
+#input-wrapper {
+	display: flex;
+	justify-content: center;
+}
+
 #clear {
-	/* border: 1px solid red; */
-	position: absolute;
-	right: 130px;
-	top: 0px;
 	width: 42px;
 	height: 42px;
 	padding: 10px;
 	display: none;
+	margin-left: -42px;
 }
 
 #clear.show {
@@ -248,30 +264,37 @@ footer a:hover {
 	visibility: visible;
 }
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 500px) {
 	h1 {
 		font-size: 4rem;
 	}
 
-	#clear {
-		right: 20px;
+	section {
+		padding: 2.8rem 3rem;
 	}
+
+	main {
+		padding: 2.6rem 2rem;
+	}
+	/* #clear {
+		right: 20px;
+	} */
 }
 
 @media only screen and (min-width: 401px) {
-	#clear {
-		right: 38px;
-	}
+	/* #clear {
+		right: 32px;
+	} */
 }
 
 @media only screen and (min-width: 500px) {
-	#clear {
-		right: 86px;
-	}
+	/* #clear {
+		right: 66px;
+	} */
 }
 
 @media only screen and (min-width: 600px) {
-	#clear {
-		right: 130px;
-	}
+	/* #clear {
+		right: 120px;
+	} */
 }

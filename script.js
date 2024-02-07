@@ -63,9 +63,7 @@ function errorMessage() {
 }
 
 convertBtnEl.addEventListener("click", () => {
-	let baseValue = inputEl.value
-	const value = conversion(baseValue)
-
+	const baseValue = inputEl.value
 	if (isNumeric(baseValue) && baseValue) {
 		conversion(baseValue)
 	} else {
@@ -123,9 +121,9 @@ class Switch {
 	// Switch state of a switch
 	toggleStatus() {
 		const currentState =
-		this.switchNode.getAttribute('aria-checked') === 'true';
+			this.switchNode.getAttribute('aria-checked') === 'true';
 		const newState = String(!currentState);
-		
+
 		this.switchNode.setAttribute('aria-checked', newState);
 		if (this.switchNode.getAttribute('aria-checked') === "true") {
 			Switch.setUp("dark")
@@ -146,6 +144,5 @@ window.addEventListener('DOMContentLoaded', function () {
 	Array.from(document.querySelectorAll('[role^=switch]')).forEach(
 		(element) => new Switch(element)
 	);
-	console.log("before setting mode")
 	Switch.setUp(mode)
 });

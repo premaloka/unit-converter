@@ -5,10 +5,10 @@
 /* ---------------------- */
 :root {
 	/* COLORS */
-	--color-primary: rgba(105, 67, 255, 1);
-	--color-secondary: rgba(178, 149, 255, 1);
+	--color-primary: rgb(105, 67, 255, 1);
+	--color-secondary: rgb(178, 149, 255, 1);
 	--color-white: rgba(255, 255, 255, 1);
-	--color-light: rgba(211, 211, 211, 1);
+	--color-light: rgb(211, 211, 211, 1);
 	--color-content-bg: rgba(244, 244, 244, 1);
 	--color-section-bg: rgba(255, 255, 255, 1);
 	--color-footer-bg: rgba(234, 234, 236, 1);
@@ -78,12 +78,12 @@
 }
 
 main.dark {
-	--color-content-bg: rgba(31, 41, 55, 1);
+	--color-content-bg: rgb(38, 35, 51);
 }
 
 section.dark {
-	--color-section-bg: rgba(39, 53, 73, 1);
-	--color-font-p: var(--color-light);
+	--color-section-bg: rgb(60, 54, 80);
+	--color-font-p: var(--color-white);
 }
 
 section.dark h2 {
