@@ -13,6 +13,6 @@ This project is aimed to solve a user friendly experience for converting values 
 
 --------------
 
-<img width="390" alt="unit-converter-light" src="https://github.com/premaloka/unit-converter/assets/113435908/7da06ebb-97fa-49e5-8209-bf3993da3dd7">
+<img width="280px" alt="unit-converter-light" src="https://github.com/premaloka/unit-converter/assets/113435908/7da06ebb-97fa-49e5-8209-bf3993da3dd7">
 
-<img width="390" alt="unit-converter-dark" src="https://github.com/premaloka/unit-converter/assets/113435908/9333ce76-3cb4-48f3-8bc4-c4891b73f70e">
+<img width="280px" alt="unit-converter-dark" src="https://github.com/premaloka/unit-converter/assets/113435908/9333ce76-3cb4-48f3-8bc4-c4891b73f70e">
